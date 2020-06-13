@@ -1,4 +1,4 @@
-Problem Statement:
+/*Problem Statement:
 
 Given an array nums of integers, return how many of them contain an even number of digits.
  
@@ -31,8 +31,9 @@ Constraints:
 ############################################################################################
 
 Solution :
+*/
 
-
+package arrays;
 class Solution {
     public int findNumbers(int[] nums) {
         

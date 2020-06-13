@@ -1,4 +1,5 @@
-Problem Statement:
+package arrays;
+/*Problem Statement:
 
 Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
 
@@ -17,7 +18,7 @@ A is sorted in non-decreasing order.
 ################################################################################################
 
 Solution:
-
+*/
 class Solution {
     public int[] sortedSquares(int[] A) {
         
