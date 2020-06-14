@@ -28,3 +28,23 @@ Note:
 0 <= arr[i] <= 9 
 ***/
 
+class Solution {
+    public void duplicateZeros(int[] arr) {
+        
+     int len = arr.length;
+
+        for(int i=0; i<len; i++){
+            if(arr[i] == 0){
+                shiftArr(arr, i , len);
+                i++;
+            }
+        }	
+    }
+    
+    public void shiftArr(int[] arr, int index, int length){
+        
+        for(int i=length-2; i>=index; i--){
+	        arr[i+1] = arr[i];
+	    }
+    }
+}
