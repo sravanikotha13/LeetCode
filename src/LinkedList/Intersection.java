@@ -60,7 +60,9 @@ public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         
         Set list1 = new HashSet<ListNode>();
-        Set list2 = new HashSet<ListNode>();
+        
+        if(headA ==null || headB ==null)
+            return null;
         
         while(headA != null){
             list1.add(headA);
@@ -70,8 +72,6 @@ public class Solution {
         while(headB != null){
             if(list1.contains(headB))
                 return headB;
-            else
-                list2.add(headB);
             headB = headB.next;
         }
     return null;
